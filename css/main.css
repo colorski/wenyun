@@ -19,7 +19,155 @@ h1,h2,h3,h4,h5,h6{margin:0;font-size:100%;font-weight:normal}ul,ol,dl,dd,menu,p,
  ***************************************
  **/
 
-/*alert - s*/
+/*common*/
+body {
+    display:flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+header {
+    display: flex;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid #247745;
+}
+header img {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+}
+header h1 {
+    font-family: 'SimSun';
+    font-weight: bold;
+    color: #0a5004;
+}
+header h1 span {
+    font-weight: normal;
+    padding: 0 3px;
+}
+header h1 strong {
+    font-weight: normal;
+    font-size: .8em;
+}
+header .icon-btn-phone {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    font-size: 26px;
+    font-weight: bold;
+    color: #1db710;
+}
+
+main {
+    flex: 1;
+    position: relative;
+}
+main img {
+    width: 100%;
+}
+
+.footer-shadow {
+    height: 3rem;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5001;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    border-top: 1px solid #247745;
+    background-color: #fff;
+}
+footer a {
+    flex: 1 1 0;
+    border-right: 1px solid #247745;
+    text-align: center;
+    font-size: .8em;
+    color: #0a5004;
+    font-family: 'SimSun';
+}
+footer a:last-child {
+    border-right: none;
+}
+footer a.current {
+    background-color: #247745;
+    color: #fff;
+}
+footer a i.iconfont {
+    margin-right: 3px;
+}
+footer a span {
+    font-family: 'SimSun';
+}
+
+.wy-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgba(50, 119, 67, 1);
+}
+.wy-bg-inner {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+.wy-bg-inner .list {
+    display: flex;
+    padding: 2rem 1rem;
+    color: #fff;
+    border-bottom: 1px dashed #ccc;
+}
+.wy-bg-inner .phone {
+    margin-top: 4rem;
+}
+.wy-bg-inner .list span {
+    line-height: 28px;
+    font-size: 16px;
+    flex: 1 1 0;
+}
+.wy-bg-inner .list span i {
+    font-weight: bold;
+    margin-right: 5px;
+}
+.wy-bg-inner .phone-click {
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.wy-bg-inner .phone-click i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.wy-bg-inner .icon-btn-cancle {
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    color: #ddd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5003;
+}
 .alerts {
     display: none;
     max-width: 200px;
@@ -47,102 +195,6 @@ h1,h2,h3,h4,h5,h6{margin:0;font-size:100%;font-weight:normal}ul,ol,dl,dd,menu,p,
 .info {
     background-color: #50bfff;
 }
-
-/*alertTips*/
-.alertTip_bg {
-    width: 100%;
-    height: 100%;
-    background: url(images/bg_alpha.png) left center repeat;
-    background: rgba(0,0,0,.5);
-    position: fixed;
-    top: 0;
-    left:0;
-    z-index: 5100;
-}
-.alertTip {
-    width: 300px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: -200px;
-    z-index: 5101;
-}
-
-.alertTip h6 {
-    height: 40px;
-    line-height: 40px;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #eee;
-    background-color: #f8f8f8;
-}
-.alertTip h6:hover {
-    cursor: move;
-}
-.alertTip p {
-    padding: 0 10px;
-    line-height: 24px;
-    font-size: 14px;
-    text-indent: 2em;
-}
-.alertTip > button {
-    display: block;
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    margin-top: 20px;
-    border: none;
-    background-color: #fff;
-    border-top: 1px solid #eee;
-    cursor: pointer;
-    transition: .3s background-color;
-}
-.alertTip > button:hover {
-    background-color: #f8f8f8;
-}
-
-.alertTip > .cancle {
-    float:left;
-    width: 150px;
-}
-.alertTip > .sure {
-    float: right;
-    width: 150px;
-    border-left: 1px solid #eee;
-}
-
-/*common*/
-body {
-    display:flex;
-    flex-flow: column;
-    min-height: 100vh;
-}
-main {
-    flex: 1;
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    height: 3rem;
-    line-height: 3rem;
-    border-top: 1px solid #ddd;
-}
-footer a {
-    flex: 1 1 0;
-    text-align: center;
-    font-size: .8em;
-    color: #333;
-}
-
-
-
 
 /*index*/
 
