@@ -16,7 +16,8 @@
 				'<div class="wy-bg-inner">'+
 					'<p class="list phone"><span><i class="iconfont icon-ffwappui122822"></i>电话：13161516787</span><a href="tel:13161516787" class="phone-click">点击咨询</a></p>'+
 					'<p class="list address"><span><i class="iconfont icon-ffwappui122820"></i>地址：房山区良乡华亨国际中心9层913室</span></p>'+
-					'<p class="list weixin"><span><i class="iconfont icon-scan_light"></i>微信：13161516787</span></p>'+
+					'<p class="list weixin"><span><i class="iconfont icon-scan_light"></i>微信：Wyslkf13161516787</span></p>'+
+					'<p class="list erweima"><span><img src="http://www.colorski.com/wenyun/images/code_Wyslkf13161516787.jpg" alt="文蕴视力康复中心二维码" /></span></p>'+
 					'<i class="iconfont icon-1295jiaoyiguanbidingdan icon-btn-cancle" id="btnIconPhoneCancle"></i>'+
 				'</div>'+
 			'</div>'
