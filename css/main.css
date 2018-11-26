@@ -366,94 +366,34 @@ footer a span {
     padding-bottom: 1rem;
     font-size: 14px;
 }
-/* .oval-thought-border {
-    position:relative;
-    padding:20px 30px;
-    border:2px solid #dd19db;
-    text-align:center;
-    color:#333;
-    background:#fff;
-    -moz-border-radius:140px / 140px;
-    border-radius:140px / 140px;
-  }
-  .oval-thought-border:before {
-    content:"";
-    position:absolute;
-    z-index:10;
-    bottom:-20px;
-    right:55px;
-    width:30px;
-    height:30px;
-    border:2px solid #dd19db;
-    background:#fff;
-    -webkit-border-radius:30px;
-    -moz-border-radius:30px;
-    border-radius:30px;
-  }
-  .oval-thought-border:after {
-    content:"";
-    position:absolute;
-    z-index:10;
-    bottom:-40px;
-    right:38px;
-    width:15px;
-    height:15px;
-    border:2px solid #dd19db;
-    background:#fff;
-    -webkit-border-radius:15px;
-    -moz-border-radius:15px;
-    border-radius:15px;
-  }
-  
-.rectangle {
-    position:relative;
-    padding:20px 15px;
-    border:2px solid #05ccfa;
-    text-align:center;
-    color:#333;
-    background:#fff;
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    border-radius:20px;
-  }
-  .rectangle:before {
-    content:"";
-    position:absolute;
-    z-index:10;
-    bottom:-34px;
-    left:47px;
-    width:50px;
-    height:30px;
-    border-style:solid;
-    border-width:0 2px 2px 0;
-    border-color:#05ccfa;
-    background:transparent;
-    -webkit-border-bottom-right-radius:80px 50px;
-    -moz-border-radius-bottomright:80px 50px;
-    border-bottom-right-radius:80px 50px;
-  }
-  .rectangle:after {
-    content:"";
-    position:absolute;
-    z-index:10;
-    bottom:-34px;
-    left:51px;
-    width:20px;
-    height:30px;
-    border-style:solid;
-    border-width:0 2px 2px 0;
-    border-color:#05ccfa;
-    background:transparent;
-    -webkit-border-bottom-right-radius:40px 50px;
-    -moz-border-radius-bottomright:40px 50px;
-    border-bottom-right-radius:40px 50px;
-  }
-  .rectangle > :first-child:after {
-    content:"";
-    position:absolute;
-    bottom:-10px;
-    left:73px;
-    width:24px;
-    height:10px;
-    background:#fff;
-  } */
+
+/*理疗流程*/
+.steps h1 {
+    font-size: 18px;
+    padding: 20px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.steps h1 i {
+    float: left;
+    margin-right: 6px;
+}
+.steps h4 {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.steps p {
+    line-height: 1.5;
+    padding: 0 36px;
+}
+.squre-ul {
+    padding: 20px;
+}
+.squre-ul li {
+    line-height: 2.2;
+    list-style-type: square;
+}
